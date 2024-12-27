@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Brain, ChromeIcon as Google, Github } from 'lucide-react'
@@ -5,6 +6,8 @@ import Link from "next/link"
 
 export default function Register() {
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       {/* Animated Background */}
       <div className="fixed inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]">
@@ -121,6 +124,7 @@ export default function Register() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
